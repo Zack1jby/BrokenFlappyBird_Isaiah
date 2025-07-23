@@ -2229,11 +2229,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ea749053687acb47b8d5ec7c929502d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreText: {fileID: 0}
-  TitleScreen: {fileID: 0}
-  ReadyScreen: {fileID: 0}
-  GameOverScreen: {fileID: 0}
-  ScoreUI: {fileID: 0}
+  ScoreText: {fileID: 1303700497}
+  TitleScreen: {fileID: 1630145166}
+  ReadyScreen: {fileID: 1661459960}
+  GameOverScreen: {fileID: 1316777439}
+  ScoreUI: {fileID: 1303700495}
 --- !u!114 &2077817621
 MonoBehaviour:
   m_ObjectHideFlags: 0
