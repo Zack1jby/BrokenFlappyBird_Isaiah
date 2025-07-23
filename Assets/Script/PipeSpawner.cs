@@ -2,17 +2,17 @@ using UnityEngine;
 
 public class PipeSpawner : MonoBehaviour
 {
-    public GameObject prefab;
-    public float spawnRate = .1f;
-    public float randomVariable = 1f;
-    public Transform wherewewanttheprefabtostart;
+    public GameObject Pipe;
+    public float SpawnRate = .1f;
+    public float MaxYOffset = 1f;
+    public Transform PipeSpawnPos;
     
     private float timer = float.MaxValue;
 
     void Update()
     {
         timer += Time.deltaTime;
-        if (timer >= spawnRate)
+        if (timer >= SpawnRate)
         {
             DoStuff();
             timer = 0f;
@@ -26,8 +26,8 @@ public class PipeSpawner : MonoBehaviour
 
     void DoStuff()
     {
-        float yOffset = Random.Range(-randomVariable, randomVariable);
-        Vector3 spawnPosition = wherewewanttheprefabtostart.position + Vector3.up * yOffset;
-        Instantiate(prefab, spawnPosition, Quaternion.identity);
+        float yOffset = Random.Range(-MaxYOffset, MaxYOffset);
+        Vector3 spawnPosition = PipeSpawnPos.position + Vector3.up * yOffset;
+        Instantiate(Pipe, spawnPosition, Quaternion.identity);
     }
 }
