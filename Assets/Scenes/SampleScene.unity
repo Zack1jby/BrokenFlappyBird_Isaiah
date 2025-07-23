@@ -763,7 +763,7 @@ GameObject:
   - component: {fileID: 749682264}
   - component: {fileID: 749682267}
   m_Layer: 0
-  m_Name: g
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1222,7 +1222,7 @@ GameObject:
   - component: {fileID: 1126978222}
   - component: {fileID: 1126978223}
   m_Layer: 0
-  m_Name: p
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
