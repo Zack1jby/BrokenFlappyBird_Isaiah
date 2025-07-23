@@ -1181,15 +1181,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 5526677527330610540, guid: 210493843f66aee42981265978864341, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.44, y: 2.56}
+  m_Size: {x: 6, y: 10.666667}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1048608690
@@ -2229,11 +2229,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ea749053687acb47b8d5ec7c929502d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sText: {fileID: 1303700497}
-  screen1: {fileID: 1630145166}
-  screen2: {fileID: 1661459960}
-  screen3: {fileID: 1316777439}
-  sUI: {fileID: 1303700495}
+  ScoreText: {fileID: 0}
+  TitleScreen: {fileID: 0}
+  ReadyScreen: {fileID: 0}
+  GameOverScreen: {fileID: 0}
+  ScoreUI: {fileID: 0}
 --- !u!114 &2077817621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2246,10 +2246,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e184998de6fc6de44a8fa51a7cee0034, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
-  spawnRate: 0.2
-  randomVariable: 1
-  wherewewanttheprefabtostart: {fileID: 1689678197}
+  Pipe: {fileID: 0}
+  SpawnRate: 0.1
+  MaxYOffset: 1
+  PipeSpawnPos: {fileID: 0}
 --- !u!1 &2110664486
 GameObject:
   m_ObjectHideFlags: 0
