@@ -2241,15 +2241,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2077817617}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e184998de6fc6de44a8fa51a7cee0034, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Pipe: {fileID: 0}
-  SpawnRate: 0.1
+  Pipe: {fileID: 8895835194987703811, guid: 1ba1edbadf2e9b445a570241889d50da, type: 3}
+  SpawnRate: 3
   MaxYOffset: 1
-  PipeSpawnPos: {fileID: 0}
+  PipeSpawnPos: {fileID: 1689678197}
 --- !u!1 &2110664486
 GameObject:
   m_ObjectHideFlags: 0
