@@ -16,7 +16,7 @@ public class Bird : MonoBehaviour
     [SerializeField] private float rotationLerpSpeed = 5f;
     [SerializeField] private float gravityScale = 3f;
     
-    void Start()
+    private void Start()
     {
         initialBirdPosition = transform.position;
         initialBirdRotation = transform.rotation;
@@ -25,7 +25,7 @@ public class Bird : MonoBehaviour
         birdRB.gravityScale = 0f; 
     }
 
-    void Update()
+    private void Update()
     {
         if (isAlive)
         {
@@ -43,7 +43,7 @@ public class Bird : MonoBehaviour
         birdAnimator.SetTrigger("Jump");
     }
 
-    void RotateBasedOnVelocity()
+    private void RotateBasedOnVelocity()
     {
         float verticalVelocity = birdRB.linearVelocity.y;
 
