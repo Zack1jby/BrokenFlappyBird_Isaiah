@@ -2,17 +2,17 @@ using UnityEngine;
 
 public class GroundScroll : MonoBehaviour
 {
-    public float scrollSpeed = 2f;
-    public float resetPositionX; 
-    public float startPositionX; 
+    public float ScrollSpeed = 2f;
+    public float ResetPositionX; 
+    public float StartPositionX; 
 
     void Update()
     {
-        transform.Translate(Vector2.left * scrollSpeed * Time.deltaTime);
+        transform.Translate(Vector2.left * ScrollSpeed * Time.deltaTime);
 
-        if (transform.position.x <= resetPositionX)
+        if (transform.position.x <= ResetPositionX)
         {
-            Vector2 newPos = new Vector2(startPositionX, transform.position.y);
+            Vector2 newPos = new Vector2(StartPositionX, transform.position.y);
             transform.position = newPos;
         }
     }

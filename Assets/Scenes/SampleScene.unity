@@ -897,9 +897,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bad160665ad30be468746c093f60ac00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 2
-  resetPositionX: -3
-  startPositionX: 3
+  ScrollSpeed: 2
+  ResetPositionX: -3
+  StartPositionX: 3
 --- !u!1 &807683797
 GameObject:
   m_ObjectHideFlags: 0
