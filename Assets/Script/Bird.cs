@@ -16,10 +16,6 @@ public class Bird : MonoBehaviour
     public float rotationLerpSpeed = 5f;
     public float gravityScale = 3f;
     
-    private void Awake()
-    {
-    }
-
     void Start()
     {
         initialBirdPosition = transform.position;
@@ -39,11 +35,6 @@ public class Bird : MonoBehaviour
             }
             RotateBasedOnVelocity();
         }
-    }
-
-    private void ResetJumpTrigger()
-    {
-        birdAnimator.ResetTrigger("Jump");
     }
 
     private void Jump()
