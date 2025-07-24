@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class GroundScroll : MonoBehaviour
 {
-    public float ScrollSpeed = 2f;
-    public float ResetPositionX; 
-    public float StartPositionX; 
+    [SerializeField] private float ScrollSpeed = 2f;
+    [SerializeField] private float ResetPositionX; 
+    [SerializeField] private float StartPositionX; 
 
     void Update()
     {
