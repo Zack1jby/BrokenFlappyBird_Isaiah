@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class Pipe : MonoBehaviour
 {
-    public float moveSpeed = 2f;
-    public float destroyX = -10f;
+    public float MoveSpeed = 2f;
+    public float DestroyX = -10f;
     private bool scored = false;
 
     void Update()
     {
-        transform.position += Vector3.left * moveSpeed * Time.deltaTime;
+        transform.position += Vector3.left * MoveSpeed * Time.deltaTime;
 
         if (!scored && transform.position.x < 0)
         {
@@ -16,7 +16,7 @@ public class Pipe : MonoBehaviour
             GameManager.Instance.IncreaseScore();
         }
 
-        if (transform.position.x < destroyX)
+        if (transform.position.x < DestroyX)
         {
             Destroy(gameObject);
         }
