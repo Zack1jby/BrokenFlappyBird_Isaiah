@@ -9,13 +9,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] private UIManager uiManager;
     private int score = 0;
 
-    void Awake()
+    private void Awake()
     {
         Instance = this;
         pipeSpawner.enabled = false;
     }
 
-    void Start()
+    private void Start()
     {
         uiManager.ShowStart();
         bird.gameObject.SetActive(false);
