@@ -6,7 +6,7 @@ public class GroundScroll : MonoBehaviour
     [SerializeField] private float ResetPositionX; 
     [SerializeField] private float StartPositionX; 
 
-    void Update()
+    private void Update()
     {
         transform.Translate(Vector2.left * ScrollSpeed * Time.deltaTime);
 
