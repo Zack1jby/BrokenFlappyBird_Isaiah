@@ -4,9 +4,9 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    public Bird bird;
-    public PipeSpawner pipeSpawner;
-    public UIManager uiManager;
+    [SerializeField] private Bird bird;
+    [SerializeField] private PipeSpawner pipeSpawner;
+    [SerializeField] private UIManager uiManager;
     private int score = 0;
 
     void Awake()
