@@ -9,7 +9,7 @@ public class BounceUI : MonoBehaviour
     private RectTransform rectTransform;
     private Vector2 startAnchoredPos;
 
-    void Start()
+    private void Start()
     {
         rectTransform = GetComponent<RectTransform>();
         startAnchoredPos = rectTransform.anchoredPosition;
@@ -17,18 +17,18 @@ public class BounceUI : MonoBehaviour
         StartCoroutine(BounceUp());
     }
 
-    IEnumerator BounceUp()
+    private IEnumerator BounceUp()
     {
         yield return StartCoroutine(MoveVertical(startAnchoredPos, startAnchoredPos + Vector2.up * bounceHeight, bounceDuration));
         StartCoroutine(BounceDown());
     }
 
-    IEnumerator BounceDown()
+    private IEnumerator BounceDown()
     {
         yield return StartCoroutine(MoveVertical(startAnchoredPos + Vector2.up * bounceHeight, startAnchoredPos, bounceDuration));
     }
 
-    IEnumerator MoveVertical(Vector2 from, Vector2 to, float duration)
+    private IEnumerator MoveVertical(Vector2 from, Vector2 to, float duration)
     {
         float elapsed = 0f;
         while (elapsed < duration)
