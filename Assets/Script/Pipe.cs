@@ -6,7 +6,7 @@ public class Pipe : MonoBehaviour
     public float DestroyX = -10f;
     private bool scored = false;
 
-    void Update()
+    private void Update()
     {
         transform.position += Vector3.left * MoveSpeed * Time.deltaTime;
 
