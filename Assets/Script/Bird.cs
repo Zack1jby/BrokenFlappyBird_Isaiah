@@ -10,11 +10,11 @@ public class Bird : MonoBehaviour
     private Vector3 initialBirdPosition;
     private Quaternion initialBirdRotation;
 
-    public float maxJumpVelocity = 5f;
-    public float maxUpwardAngle = 45f;     
-    public float maxDownwardAngle = -90f;  
-    public float rotationLerpSpeed = 5f;
-    public float gravityScale = 3f;
+    [SerializeField] private float maxJumpVelocity = 5f;
+    [SerializeField] private float maxUpwardAngle = 45f;     
+    [SerializeField] private float maxDownwardAngle = -90f;  
+    [SerializeField] private float rotationLerpSpeed = 5f;
+    [SerializeField] private float gravityScale = 3f;
     
     void Start()
     {
