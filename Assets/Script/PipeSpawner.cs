@@ -9,7 +9,7 @@ public class PipeSpawner : MonoBehaviour
     
     private float timer = float.MaxValue;
 
-    void Update()
+    private void Update()
     {
         timer += Time.deltaTime;
         if (timer >= SpawnRate)
@@ -24,7 +24,7 @@ public class PipeSpawner : MonoBehaviour
         enabled = true;
     }
 
-    void SpawnPipes()
+    private void SpawnPipes()
     {
         float yOffset = Random.Range(-MaxYOffset, MaxYOffset);
         Vector3 spawnPosition = PipeSpawnPos.position + Vector3.up * yOffset;
