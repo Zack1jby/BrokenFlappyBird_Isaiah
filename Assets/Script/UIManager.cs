@@ -4,11 +4,11 @@ using TMPro;
 
 public class UIManager : MonoBehaviour
 {
-    public TMP_Text ScoreText;
-    public GameObject TitleScreen;
-    public GameObject ReadyScreen;
-    public GameObject GameOverScreen;
-    public GameObject ScoreUI;
+    [SerializeField] private TMP_Text ScoreText;
+    [SerializeField] private GameObject TitleScreen;
+    [SerializeField] private GameObject ReadyScreen;
+    [SerializeField] private GameObject GameOverScreen;
+    [SerializeField] private GameObject ScoreUI;
 
     public void UpdateScore(int score)
     {
