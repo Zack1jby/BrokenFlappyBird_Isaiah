@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class PipeSpawner : MonoBehaviour
 {
-    public GameObject Pipe;
-    public float SpawnRate = .1f;
-    public float MaxYOffset = 1f;
-    public Transform PipeSpawnPos;
+    [SerializeField] private GameObject Pipe;
+    [SerializeField] private float SpawnRate = .1f;
+    [SerializeField] private float MaxYOffset = 1f;
+    [SerializeField] private Transform PipeSpawnPos;
     
     private float timer = float.MaxValue;
 
